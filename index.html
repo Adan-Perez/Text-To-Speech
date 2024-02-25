@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/91911634?v=4" />
+    <title>Text To Speech</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text To Speech</h1>
+      <form id="form">
+        <input id="text" value="Hello world!" required />
+        <div class="voices">
+          <label>Select Voice</label>
+          <select id="voice"></select>
+        </div>
+        <div class="volume">
+          <label>Volume</label>
+          <input id="volume" type="range" min="0" max="1" step="0.1" value="1" />
+        </div>
+        <div class="pitch">
+          <label>Pitch</label>
+          <input id="pitch" type="range" min="0" max="2" step="0.1" value="1" />
+        </div>
+        <div class="rate">
+          <label>Rate</label>
+          <input id="rate" type="range" min="0.1" max="10" step="0.1" value="1" />
+        </div>
+        <button type="button" id="btn" disabled>Speak</button>
+      </form>
+    </div>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
